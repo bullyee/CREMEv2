@@ -1,0 +1,6 @@
+sudo msfdb start
+msfrpcd -P kali -S
+
+python3 /home/kali/CREMEv2/CREME_backend_execution/scripts/02_scenario/02_disk_wipe/python_files/attacker_server/01_step_DiskWipe.py creme_logs 192.168.34.4 192.168.34.101
+python3 /home/kali/CREMEv2/CREME_backend_execution/scripts/02_scenario/02_disk_wipe/python_files/attacker_server/02_step_DiskWipe.py creme_logs 192.168.34.4 192.168.34.101
+python3 /home/kali/CREMEv2/CREME_backend_execution/scripts/02_scenario/02_disk_wipe/python_files/attacker_server/02_step_DiskWipe.py creme_logs 192.168.34.4 192.168.34.101

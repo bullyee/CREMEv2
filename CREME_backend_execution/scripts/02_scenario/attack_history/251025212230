@@ -1,0 +1,10 @@
+cd ~/CREMEv2/CREME_backend_execution/scripts/02_scenario
+source ~/.venvs/redteamingenv/bin/activate
+
+python3 01_mirai/python_files/cnc/01_step_PRE_Mirai.py creme_logs 192.168.34.4 192.168.34.101
+
+// setting up metasploit rpc
+sudo msfdb start
+msfrpcd -P kali -S
+
+python3 01_mirai/python_files/cnc/02_step_PRE_Mirai.py creme_logs 192.168.34.4 192.168.34.101 
